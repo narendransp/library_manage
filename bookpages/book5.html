@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="d-flex">
+  
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h5 class="text-center py-3">Library</h5>
+    <a href="#">Dashboard</a>
+    <a href="#">Books</a>
+    <a href="#">Members</a>
+    <a href="#">Issued Books</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex-grow-1">
+
+    <!-- Header -->
+    <nav class="navbar bg-white border-bottom px-4">
+      <h5 class="mb-0">Book Details</h5>
+    </nav>
+
+    <div class="container-fluid p-4">
+      <div class="row g-4">
+
+        <!-- Book Cover -->
+        <div class="col-lg-3">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <img src="assets/msf.jpg" class="img-fluid book-cover rounded mb-3">
+              <span class="badge bg-success">Available</span>
+              <p class="text-muted mt-2">5 of 7 copies available</p>
+
+              <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-primary">Issue Book</button>
+                <button class="btn btn-outline-secondary">Reserve Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Info -->
+        <div class="col-lg-9">
+
+          <!-- Info Card -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h3>The Great Gatsby</h3>
+              <p class="text-muted">by F. Scott Fitzgerald</p>
+
+              <p>
+                The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald,
+                set in the Jazz Age and exploring themes of wealth, love, and ambition.
+              </p>
+
+              <div class="row mt-4">
+                <div class="col-md-4"><strong>Category:</strong> Classic</div>
+                <div class="col-md-4"><strong>ISBN:</strong> 978-0-7432-7356-5</div>
+                <div class="col-md-4"><strong>Publisher:</strong> Scribner</div>
+                <div class="col-md-4 mt-2"><strong>Year:</strong> 1925</div>
+                <div class="col-md-4 mt-2"><strong>Pages:</strong> 180</div>
+                <div class="col-md-4 mt-2"><strong>Language:</strong> English</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loan History -->
+          <div class="card shadow-sm">
+            <div class="card-header">
+              <strong>Loan History</strong>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>Member</th>
+                    <th>Borrowed Date</th>
+                    <th>Returned Date</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Emma Wilson</td>
+                    <td>2025-12-15</td>
+                    <td>—</td>
+                    <td><span class="badge bg-warning">Borrowed</span></td>
+                  </tr>
+                  <tr>
+                    <td>John Smith</td>
+                    <td>2025-11-20</td>
+                    <td>2025-12-10</td>
+                    <td><span class="badge bg-success">Returned</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sarah Johnson</td>
+                    <td>2025-10-05</td>
+                    <td>2025-11-15</td>
+                    <td><span class="badge bg-success">Returned</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
