@@ -1,77 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Library Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg dark-blue-navbar navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<!-- 🔹 NAVBAR -->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold text-white " href="#"></a>Library</a>
+
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Books</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Members</a></li>
+        <li class="nav-item"><a class="nav-link" href="books.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
-<div class="row mt-5">
-<div class="col-md-4">
-<div class="card text-bg-primary mb-3 ms-5" style="max-width: 23rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+
+<div class="container-fluid p-0">
+  <div class="hero d-flex align-items-center justify-content-center">
+
+    <!-- Background Image -->
+    <img src="assets/home.jpg" class="hero-img" alt="Library">
+
+    <!-- Overlay Content -->
+    <div class="hero-content text-center text-white">
+      <h1 class="fw-bold">Welcome to the Library</h1>
+      <p class="mb-3">
+        Manage books, track borrowings, and explore knowledge easily.
+      </p>
+      <a href="books.html" class="btn btn-primary">Explore Books</a>
+    </div>
+
   </div>
 </div>
-</div>
-<div class="col-md-4">
-<div class="card text-bg-secondary mb-3" style="max-width: 23rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Secondary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+<!-- 🔹 POPULAR BOOKS -->
+<div class="container mt-5">
+  <h4 class="fw-bold mb-3">Popular Books</h4>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="assets/sapiens.jpg" class="card-img-top">
+        <div class="card-body">
+          <h6 class="card-title">1984</h6>
+          <small class="text-muted">Dystopian</small>
+          <a href="#" class="btn btn-sm btn-primary d-block mt-3">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="assets/msf.jpg" class="card-img-top">
+        <div class="card-body">
+          <h6 class="card-title">The Great Gatsby</h6>
+          <small class="text-muted">Classic</small>
+          <a href="#" class="btn btn-sm btn-primary d-block mt-3">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="assets/hp.jpg" class="card-img-top">
+        <div class="card-body">
+          <h6 class="card-title">Pride & Prejudice</h6>
+          <small class="text-muted">Romance</small>
+          <a href="#" class="btn btn-sm btn-primary d-block mt-3">View</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-<div class="col-md-4">
-<div class="card text-bg-success mb-3" style="max-width: 22rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Success card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-  </div>
-</div>
-</div>
-</div>
+
+<!-- 🔹 FOOTER -->
+<footer class="text-center mt-5 py-3 bg-light">
+  <small>© 2026 Library Management System</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
